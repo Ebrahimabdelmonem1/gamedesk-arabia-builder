@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,23 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cairo: ['Cairo', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				gym: {
+					primary: '#0F4C81',    // Dark blue
+					secondary: '#E63946',  // Vibrant red
+					accent: '#FFD166',     // Gold accent
+					dark: '#1A1A2E',       // Near black
+					light: '#F8F9FA',      // Off white
+					gray: '#6C757D',       // Medium gray
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
